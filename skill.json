@@ -1,0 +1,41 @@
+{
+  "name": "genpark-web-to-print-factory-capacity-aggregation-optimizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Web-to-print aggregation engine matching commercial print jobs with idle printing factory capacity to slash turnaround times and costs.",
+  "author": "genpark",
+  "category": "manufacturing",
+  "tags": [
+    "web-to-print",
+    "factory-aggregation",
+    "capacity-matching",
+    "print-on-demand",
+    "raksul"
+  ],
+  "inputs": {
+    "print_type": {
+      "type": "string"
+    },
+    "run_quantity": {
+      "type": "integer"
+    },
+    "deadline_days": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "print_job_id": {
+      "type": "string"
+    },
+    "assigned_partner_printing_factory": {
+      "type": "string"
+    },
+    "cost_savings_vs_standard_print_pct": {
+      "type": "number"
+    },
+    "total_print_cost_jpy": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
